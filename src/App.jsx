@@ -11,7 +11,7 @@ const Button = (props) => {
 
     return (
         <button className={`h-10 px-6 font-bold rounded-md ${bgColor} text-white`}>
-            {props.text}
+            {props.children}
         </button>
     );
 }
@@ -20,9 +20,9 @@ function App() {
     return (
         <div className="flex justify-center bg-blue-400 min-h-screen items-center gap-x-6">
             <h1>Hello React!</h1>
-            <Button variant="red" text="Laravel"></Button>
-            <Button variant="green" text="Vue"></Button>
-            <Button variant="blue" text="React"></Button>
+            <Button variant="red">Laravek</Button>
+            <Button variant="green">Vue</Button>
+            <Button variant="blue">React</Button>
         </div>
     )
 }
