@@ -1,32 +1,16 @@
-import React from "react";
+import React from 'react'
 
-class Button extends React.Component {
-    render() {
-        return(
-            <button
-                    className="h-10 px-6 font-bold rounded-md bg-black text-white"
-                    type="submit"
-                >
-                    Beli Sekarang
-                </button>
-        );
+const Button = (props) => {
+    const variants = {
+        red: 'bg-red-700',
+        slate: 'bg-slate-500',
+        blue: 'bg-blue-700'
     }
-}
 
-function ButtonBlack() {
-    return (
-        <button
-                    className="h-10 px-6 font-bold rounded-md bg-black text-white"
-                    type="submit"
-                >
-                    Beli Sekarang
-                </button>
-    );
-}
+    const bgColor = variants[props.variant] || 'bg-yellow-700';
 
-const ButtonRed = () => {
     return (
-        <button className="h-10 px-6 font-bold rounded-md bg-red-700 text-white">
+        <button className={`h-10 px-6 font-bold rounded-md ${bgColor} text-white`}>
             Beli Sekarang
         </button>
     );
@@ -36,11 +20,10 @@ function App() {
     return (
         <div className="flex justify-center bg-blue-400 min-h-screen items-center">
             <h1>Hello React!</h1>
-            <Button></Button>
-            <ButtonBlack></ButtonBlack>
-            <ButtonRed></ButtonRed>
+            <Button variant="red"></Button>
+            <Button variant="slate"></Button>
         </div>
     )
 }
 
-export default App
+export default App;
