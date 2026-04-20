@@ -11,17 +11,18 @@ const Button = (props) => {
 
     return (
         <button className={`h-10 px-6 font-bold rounded-md ${bgColor} text-white`}>
-            Beli Sekarang
+            React
         </button>
     );
 }
 
 function App() {
     return (
-        <div className="flex justify-center bg-blue-400 min-h-screen items-center">
+        <div className="flex justify-center bg-blue-400 min-h-screen items-center gap-x-6">
             <h1>Hello React!</h1>
             <Button variant="red"></Button>
             <Button variant="slate"></Button>
+            <Button variant="blue"></Button>
         </div>
     )
 }
