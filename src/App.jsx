@@ -2,16 +2,16 @@ import React from 'react'
 
 const Button = (props) => {
     const variants = {
-        red: 'bg-red-700',
-        green: 'bg-green-700',
-        blue: 'bg-blue-700',
+        red: 'bg-red-700 text-white',
+        green: 'bg-green-700 text-white',
+        blue: 'bg-blue-700 text-white',
     }
 
-    const bgColor = variants[props.variant] || 'bg-yellow-300 text-black'
+    const style = variants[props.variant] || 'bg-yellow-300 text-black'
 
     return (
         <button
-            className={`h-10 px-6 font-bold rounded-md ${bgColor} text-white`}
+            className={`h-10 px-6 font-bold rounded-md ${style}`}
         >
             {props.children}
         </button>
@@ -39,9 +39,25 @@ function App() {
                         </label>
                         <input
                             type="text"
-                            className="text-sm border rounded 2-full py-2 px-3 text-slate-700 placeholder:opacity-50"
+                            className="text-sm border rounded w-half py-2 px-3 text-slate-700 placeholder:opacity-50"
                             placeholder='example@email.ac.id'
                         />
+                    </div>
+                    <div className="mb-5">
+                        <label
+                            htmlFor=""
+                            className="block text-slate-700 text-sm font-bold"
+                        >
+                            Password
+                        </label>
+                        <input
+                            type="password"
+                            className="text-sm border rounded w-half py-2 px-3 text-slate-700 placeholder:opacity-50"
+                            placeholder='Enter your password'
+                        />
+                    </div>
+                    <div className='mb-5'>
+                        <Button variant="blue">Login</Button>
                     </div>
                 </form>
             </div>
