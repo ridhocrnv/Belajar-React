@@ -16,7 +16,7 @@ function App() {
                         className="base"
                         width="170"
                         height="179"
-                        alt=""
+                        alt=""                                                                             
                     />
                     <img
                         src={reactLogo}
