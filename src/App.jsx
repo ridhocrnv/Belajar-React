@@ -7,7 +7,7 @@ const Button = (props) => {
         blue: 'bg-blue-700'
     }
 
-    const bgColor = variants[props.variant] || 'bg-yellow-700';
+    const bgColor = variants[props.variant] || 'bg-yellow-300 text-black';
 
     return (
         <button className={`h-10 px-6 font-bold rounded-md ${bgColor} text-white`}>
@@ -23,6 +23,7 @@ function App() {
             <Button variant="red">Laravel</Button>
             <Button variant="green">Vue</Button>
             <Button variant="blue">React</Button>
+            <Button>Framer Motion</Button>
         </div>
     )
 }
