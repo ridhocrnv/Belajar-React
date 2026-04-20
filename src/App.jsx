@@ -1,5 +1,5 @@
 function App() {
-    return (<div className="flex justify-center bg-blue-400">
+    return (<div className="flex justify-center bg-blue-400 min-h-screen items-center">
         <h1>Hello React!</h1>
     </div>);
 }
