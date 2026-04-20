@@ -30,10 +30,10 @@ function App() {
 
             <Card>
                 <Card.Title>
-                    Sign Up
+                    Register
                 </Card.Title>
                 <Card.Description>
-                    Silahkan Sign-Up
+                    Silahkan Register
                 </Card.Description>
 
                 <form action="">
@@ -54,7 +54,7 @@ function App() {
                         />
 
                         <Button variant="blue" type="submit" className="w-full mt-2">
-                            Sign Up
+                            Register
                         </Button>
                     </Card.Body>
                 </form>
