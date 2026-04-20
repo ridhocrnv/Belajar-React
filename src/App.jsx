@@ -1,7 +1,25 @@
-function App() {
-    return (<div className="flex justify-center bg-blue-400 min-h-screen items-center">
-        <h1>Hello React!</h1>
-    </div>);
+import React from "react";
+
+class Button extends React.Component {
+    render() {
+        return(
+            <button
+                    className="h-10 px-6 font-bold rounded-md bg-black text-white"
+                    type="submit"
+                >
+                    Beli Sekarang
+                </button>
+        );
+    }
 }
 
-export default App;
+function App() {
+    return (
+        <div className="flex justify-center bg-blue-400 min-h-screen items-center">
+            <h1>Hello React!</h1>
+            <Button></Button>
+        </div>
+    )
+}
+
+export default App
