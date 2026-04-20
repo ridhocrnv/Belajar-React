@@ -1,47 +1,64 @@
 import React from 'react'
 import Button from './components/ui/Button'
+import Card from './components/ui/Card'
+import Input from './components/ui/Input'
 
 function App() {
     return (
         <div className="flex justify-center min-h-screen items-center">
-            <div className="w-full max-w-sm p-6 bg-white rounded-md shadow-sm border border-slate-200">
-                <h1 className="text-3xl text-blue-600 font-bold text-center">Login</h1>
-                <p className="font-medium text-slate-600 text-center mb-6">Silahkan login</p>
+            <Card>
+                <Card.Title>Login</Card.Title>
+                <Card.Description>Silahkan Login</Card.Description>
 
-                <form action="" className="flex flex-col">
-                    <div className="mb-4">
-                        <label
-                            htmlFor=""
-                            className="block text-slate-700 text-sm font-bold mb-1"
-                        >
-                            Email
-                        </label>
-                        <input
+                <form action="">
+                    <Card.Body>
+                        <Input 
+                            label="Email"
                             type="text"
-                            className="w-full text-sm border rounded py-2.5 px-3 text-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder:opacity-50"
-                            placeholder='example@email.ac.id'
                         />
-                    </div>
-                    <div className="mb-4">
-                        <label
-                            htmlFor=""
-                            className="block text-slate-700 text-sm font-bold mb-1"
-                        >
-                            Password
-                        </label>
-                        <input
+                        <Input 
+                            label="Password"
                             type="password"
-                            className="w-full text-sm border rounded py-2.5 px-3 text-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder:opacity-50"
-                            placeholder='Enter your password'
+                            placeholder="Enter your password"
                         />
-                    </div>
-                    
-                    <Button variant="blue" type="submit" className="w-full shadow-sm shadow-blue-200">
-                        Login
-                    </Button>
-
+                        <Button variant="blue" type="submit" className="w-full mt-2">
+                            Login
+                        </Button>
+                    </Card.Body>
                 </form>
-            </div>
+            </Card>
+
+            <Card>
+                <Card.Title>
+                    Sign Up
+                </Card.Title>
+                <Card.Description>
+                    Silahkan Sign-Up
+                </Card.Description>
+
+                <form action="">
+                    <Card.Body>
+                        <Input 
+                            label="Username"
+                            type="text"
+                            placeholder="Enter your username"
+                        />
+                        <Input 
+                            label="Email"
+                            type="text"
+                        />
+                        <Input 
+                            label="Password"
+                            type="password"
+                            placeholder="Enter your password"
+                        />
+
+                        <Button variant="blue" type="submit" className="w-full mt-2">
+                            Sign Up
+                        </Button>
+                    </Card.Body>
+                </form>
+            </Card>
         </div>
     )
 }
