@@ -6,7 +6,7 @@ const Input = ({ label, type = "text", placeholder = "Enter your text", id, ...p
             {label && (
                 <label 
                     htmlFor={inputId} 
-                    className="block text-slate-200 text-sm font-medium mb-2 ml-1"
+                    className="block text-slate-200 text-sm font-medium mb-3 ml-1"
                 >
                     {label}
                 </label>

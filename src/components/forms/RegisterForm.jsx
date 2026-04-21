@@ -19,7 +19,7 @@ const RegisterForm = () => {
 
                 <form onSubmit={handleRegister}>
                     <Card.Body>
-                        <div className="space-y-1">
+                        <div className="space-y-4">
                             <Input 
                                 label="Username"
                                 type="text"
