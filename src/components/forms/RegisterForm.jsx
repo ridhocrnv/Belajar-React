@@ -35,7 +35,7 @@ const RegisterForm = () => {
                             placeholder="Enter your passsword"
                         />
 
-                        <Button variant="blue" type="submit" className="w-full mt-2">
+                        <Button variant="blue">
                             Register
                         </Button>
                     </Card.Body>

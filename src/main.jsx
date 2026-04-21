@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+// Pages
 import Home from './components/pages/HomePage'
+import ErrorPage from './components/pages/NotFoundPage'
+
+// Forms
 import LoginForm from './components/forms/LoginForm'
 import RegisterForm from './components/forms/RegisterForm'
-import ErrorPage from './components/pages/NotFoundPage'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -21,7 +25,7 @@ const router = createBrowserRouter([
         path: '/login',
         element: (
             <div>
-                <LoginForm></LoginForm>
+                <LoginForm />
             </div>
         ),
     },
@@ -29,7 +33,7 @@ const router = createBrowserRouter([
         path: '/register',
         element: (
             <div>
-                <RegisterForm></RegisterForm>
+                <RegisterForm />
             </div>
         ),
     },

@@ -19,8 +19,6 @@ const LoginForm = () => {
                     />
                     <Button
                         variant="blue"
-                        type="submit"
-                        className="w-full mt-2"
                     >
                         Login
                     </Button>
