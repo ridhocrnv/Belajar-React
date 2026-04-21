@@ -16,7 +16,7 @@ const About = () => {
                             Saya adalah mahasiswa semester 4 Program Studi Ilmu Komputer di Universitas Halu Oleo.
                             Memiliki minat besar dalam pengembangan web dan sistem operasi Linux (Ubuntu user).
                         </p>
-                        <p>
+                        <p className="text-slate-400 leading-relaxed text-lg">
                             Saat ini saya sedang mendalami Full-Stack Web Development melalui program Coding Camp 2026 by DBS Foundation.
                         </p>
 
@@ -47,8 +47,10 @@ const About = () => {
                         <Card className="max-w-none">
                             <Card.Title className="text-left text-xl text-blue-400">Current Program</Card.Title>
                             <Card.Body className="mt-4 space-y-4">
-                                <h4 className="text-white font-bold">Full-Stack Web Developer Cohort</h4>
-                                <p className="text-slate-500 text-sm">Coding Camp 2026 by DBS Foundation</p>
+                                <div>
+                                    <h4 className="text-white font-bold">Full-Stack Web Developer Cohort</h4>
+                                    <p className="text-slate-500 text-sm">Coding Camp 2026 by DBS Foundation</p>
+                                </div>
                             </Card.Body>
                         </Card>
                     </div>
