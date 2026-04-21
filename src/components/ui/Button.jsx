@@ -5,7 +5,7 @@ const Button = ({
     children,
     ...rest
 }) => {
-    const baseStyle = "h-10 px-6 font-semibold rounded-md transition-all duration-200 inline-flex items-center justify-center active:scale-95 disabled:opacity-50 disabled:pointer-events-none";
+    const baseStyle = "h-10 px-6 font-bold rounded-md transition-all duration-200 inline-flex items-center justify-center active:scale-95 disabled:opacity-50 disabled:pointer-events-none";
 
     const variants = {
         blue: "bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/20",

@@ -1,14 +1,22 @@
 import { Link } from "react-router-dom";
+import Navbar from "../layouts/Navbar"; // Pastikan folder-nya 'layout' bukan 'layouts'
+import Footer from "../layouts/Footer";
 import Button from "../ui/Button";
 
 const Home = () => {
     return (
-        <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center relative overflow-hidden">
-            {/* Dekorasi Background */}
-            <div className="absolute top-0 -left-20 w-72 h-72 bg-blue-600 rounded-full blur-[120px] opacity-20"></div>
-            <div className="absolute bottom-0 -right-20 w-72 h-72 bg-indigo-600 rounded-full blur-[120px] opacity-20"></div>
+        // Hapus items-center dan justify-center dari sini agar Navbar & Footer berada di posisinya
+        <div className="min-h-screen bg-slate-950 text-white relative overflow-hidden flex flex-col">
 
-            <main className="relative z-10 text-center px-6">
+            {/* 1. Navbar */}
+            <Navbar />
+
+            {/* Dekorasi Background (Tetap absolute) */}
+            <div className="absolute top-0 -left-20 w-72 h-72 bg-blue-600 rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+            <div className="absolute bottom-0 -right-20 w-72 h-72 bg-indigo-600 rounded-full blur-[120px] opacity-20 pointer-events-none"></div>
+
+            {/* 2. Main Content - Gunakan flex-1 agar Footer terdorong ke bawah */}
+            <main className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-6 pt-32 pb-20">
                 <span className="px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-sm font-medium mb-6 inline-block">
                     Tech Crew • Computer Science 2024
                 </span>
@@ -27,20 +35,19 @@ const Home = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <Link to="/login" className="w-full sm:w-auto">
-                        <Button variant="blue">
+                        <Button variant="blue" className="w-full">
                             Masuk ke Portal
                         </Button>
                     </Link>
                     
-                    <Button variant="outline">
+                    <Button variant="outline" className="w-full sm:w-auto">
                         Pelajari Lebih Lanjut
                     </Button>
                 </div>
             </main>
 
-            <footer className="absolute bottom-8 text-slate-500 text-sm">
-                &copy; {new Date().getFullYear()} Tech Crew UHO.
-            </footer>
+            {/* 3. Footer */}
+            <Footer />
         </div>
     );
 }
