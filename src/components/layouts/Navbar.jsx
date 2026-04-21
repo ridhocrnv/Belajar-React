@@ -9,9 +9,6 @@ const Navbar = () => {
         <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2 group">
-                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-white shadow-lg shadow-blue-500/20 group-hover:rotate-6 transition-transform">
-                        TC
-                    </div>
                     <span className="text-xl font-bold tracking-tighter text-white uppercase">
                         Tech <span className="text-blue-500">Crew</span>
                     </span>

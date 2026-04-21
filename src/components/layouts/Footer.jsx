@@ -7,9 +7,6 @@ const Footer = () => {
                 {/* Brand */}
                 <div className="col-span-1 md:col-span-52">
                     <div className="flex items-center gap-2 mb-6">
-                        <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center font-bold text-white text-xs">
-                            TC
-                        </div>
                         <span className="text-lg font-bold text-white tracking-tighter uppercase">
                             Tech <span className="text-blue-500">Crew</span>
                         </span>
