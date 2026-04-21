@@ -2,6 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// Fonts
+import "@fontsource/geist-sans";
+import "@fontsource/geist-sans/700.css";
+import "@fontsource/geist-mono";
+
 // Pages
 import Home from './components/pages/HomePage'
 import ErrorPage from './components/pages/NotFoundPage'
