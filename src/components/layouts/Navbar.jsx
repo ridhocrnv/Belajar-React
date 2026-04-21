@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2 group">
                     <span className="text-xl font-bold tracking-tighter text-white uppercase">
-                        Tech <span className="text-blue-500">Crew</span>
+                        Ridho <span className="text-blue-500">Crnv</span>
                     </span>
                 </Link>
 
@@ -19,32 +19,24 @@ const Navbar = () => {
                     <NavLink to="/" className={navLinkStyle}>
                         Home
                     </NavLink>
-                    <NavLink to="/anggota" className={navLinkStyle}>
-                        Anggota
+                    <NavLink to="/about" className={navLinkStyle}>
+                        About
                     </NavLink>
-                    <NavLink to="/galeri" className={navLinkStyle}>
-                        Galeri
+                    <NavLink to="/projects" className={navLinkStyle}>
+                        Projects
                     </NavLink>
-                    <NavLink to="/proyek" className={navLinkStyle}>
-                        Proyek
+                    <NavLink to="/certificates" className={navLinkStyle}>
+                        Certificates
                     </NavLink>
                 </div>
 
                 {/* Auth Button */}
                 <div className="flex items-center gap-4">
-                    <Link to="/login">
-                        <Button
-                            variant="outline"
-                            className="hidden sm:flex border-none hover:bg-transparent text-slate-400 hover:text-white"
-                        >
-                            Masuk
-                        </Button>
-                    </Link>
-                    <Link to="/register">
+                    <a href="mailto:email@kamu.com">
                         <Button variant="blue" className="h-9 px-5 text-sm">
-                            Join Us
+                            Contact Me
                         </Button>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </nav>
