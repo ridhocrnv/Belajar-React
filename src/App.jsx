@@ -52,6 +52,11 @@ function App() {
                             type="password"
                             placeholder="Enter your password"
                         />
+                        <Input 
+                            label="Confirm Password"
+                            type="password"
+                            placeholder="Enter your passsword"
+                        />
 
                         <Button variant="blue" type="submit" className="w-full mt-2">
                             Register
