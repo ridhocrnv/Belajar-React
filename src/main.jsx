@@ -10,6 +10,8 @@ import "@fontsource/geist-mono";
 // Pages
 import Home from './components/pages/HomePage'
 import About from './components/pages/AboutPage';
+import Projects from './components/pages/ProjectPage';
+import Certificates from './components/pages/CertificatePage';
 import ErrorPage from './components/pages/NotFoundPage'
 
 // Forms
@@ -32,6 +34,22 @@ const router = createBrowserRouter([
         element: (
             <div>
                 <About />
+            </div>
+        )
+    },
+    {
+        path: '/projects',
+        element: (
+            <div>
+                <Projects />
+            </div>
+        )
+    },
+    {
+        path: '/certificates',
+        element: (
+            <div>
+                <Certificates />
             </div>
         )
     },
