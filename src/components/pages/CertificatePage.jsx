@@ -11,7 +11,7 @@ const Certificates = () => {
             date: 'Februari 2026',
             credential: 'Coding Camp 2026 by DBS Foundation',
             thumbnail:
-                '/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
+                './src/assets/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
             verifyUrl: '',
         },
         {
@@ -20,7 +20,7 @@ const Certificates = () => {
             date: '2026',
             credential: 'Coding Camp 2026 by DBS Foundation',
             thumbnail:
-                '/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
+                './src/assets/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
             verifyUrl: '',
         },
         {
@@ -29,7 +29,7 @@ const Certificates = () => {
             date: '2026',
             credential: 'Coding Camp 2026 by DBS Foundation',
             thumbnail:
-                '/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
+                './src/assets/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
             verifyUrl: '',
         },
     ]
