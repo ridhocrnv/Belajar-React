@@ -16,7 +16,7 @@ const Projects = () => {
         {
             title: 'Ini adalah project card',
             desc: 'Ini adalah deskripsi project card',
-            tech: ['React', 'Tailwind', 'Vite'],
+            tech: ['Vue.js', 'Express', 'Vite', 'Tailwind', 'Mysql'],
             thumbnail: '/projects/Thumbnail.png',
             github: 'https://github.com/ridhocrnv/Belajar-React.git',
             link: 'https://pkm-witsar.vercel.app',
