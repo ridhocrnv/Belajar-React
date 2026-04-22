@@ -27,13 +27,16 @@ const Home = () => {
                     </h1>
 
                     <p className="text-slate-400 text-xl md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
-                        Halo! Saya Ridho Ahmad, mahasiswa Ilmu Komputer yang berfokus pada pengembangan aplikasi web modern yang skalabel dan estetik.
+                        Halo! Saya Ridho Ahmad Irawan, mahasiswa Ilmu Komputer yang berfokus pada pengembangan aplikasi web modern yang skalabel dan estetik.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-                        <Button variant="blue" className="w-full sm:w-auto h-12 px-8">
+                        <Link to="/projects">
+                            <Button variant="blue" className="w-full sm:w-auto h-12 px-8">
                             View Projects
                         </Button>
+                        </Link>
+                        
                         <Button variant="outline" className="w-full sm:w-auto h-12 px-8 border-slate-800">
                             Download CV
                         </Button>
