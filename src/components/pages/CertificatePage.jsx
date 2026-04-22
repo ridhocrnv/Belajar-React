@@ -8,7 +8,7 @@ const Certificates = () => {
         {
             title: 'Belajar Dasar Pemrograman Web',
             issuer: 'Dicoding Indonesia',
-            date: 'Februari 2026',
+            date: '2026',
             credential: 'Coding Camp 2026 by DBS Foundation',
             thumbnail:
                 './src/assets/certificates/sertifikat_belajar_fundamental_aplikasi_web_dengan_react.jpg',
